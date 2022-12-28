@@ -1,5 +1,3 @@
-import './CSS/index.css';
-
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const formRef = document.querySelector('.search-form');
@@ -42,7 +40,7 @@ function renderSearch({ hits }) {
   const markup = hits
     .map(ele => {
       return `<div class="photo-card">
-    <img src="${ele.webformatURL}" alt="${ele.tags}" width="${ele.webformatWidth}" height="${ele.webformatHeight}" loading="lazy" />
+    <img src="${ele.webformatURL}" alt="${ele.tags}" width="500px" height="400px" loading="lazy" />
     <div class="info">
       <p class="info-item">
         <b>Likes</b><span>${ele.likes}</span>
